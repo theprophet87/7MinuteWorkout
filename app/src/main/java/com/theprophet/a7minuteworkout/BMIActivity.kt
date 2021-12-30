@@ -171,13 +171,13 @@ class BMIActivity : AppCompatActivity() {
                 val usUnitHeightValueInch: String =
                     binding?.etUSUnitHeightInch?.text.toString()
                 val usUnitWeightValue: Float =
-                    binding?.etMetricUnitWeight?.text.toString().toFloat()
+                    binding?.etUSUnitWeight?.text.toString().toFloat()
 
-                val heightValue =
+                val heightValueUS =
                     usUnitHeightValueInch.toFloat() + usUnitHeightValueFeet.toFloat() * 12
-                val bmi = 703 * (usUnitWeightValue / (heightValue * heightValue))
+                val bmiUS = 703 * (usUnitWeightValue / (heightValueUS * heightValueUS))
 
-                displayBMIResult(bmi)
+                displayBMIResult(bmiUS)
             }else{
                 Toast.makeText(this, "Please enter valid values",
                     Toast.LENGTH_SHORT).show()

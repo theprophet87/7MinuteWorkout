@@ -30,6 +30,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //History button
+        binding?.flHistory?.setOnClickListener {
+            intent = Intent(this, HistoryActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 
     override fun onDestroy() {

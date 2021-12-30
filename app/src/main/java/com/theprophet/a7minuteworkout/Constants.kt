@@ -28,6 +28,10 @@ object Constants {
             R.drawable.ic_right_jab, false, false)
         exerciseList.add(rightJabs)
 
+        val uppercuts = ExerciseModel(6, "Uppercuts",
+            R.drawable.ic_uppercuts, false, false)
+        exerciseList.add(uppercuts)
+
 
         return exerciseList
     }

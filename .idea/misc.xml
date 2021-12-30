@@ -8,6 +8,7 @@
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/drawable/drawable_radio_group_tab_background.xml" value="0.1388888888888889" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/drawable/drawable_unit_tab_selector.xml" value="0.1388888888888889" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/drawable/drawable_units_tab_text_color_selector.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.1361111111111111" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/drawable/item_circular_color_accent_border.xml" value="0.1388888888888889" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/drawable/item_circular_color_gray_background.xml" value="0.1388888888888889" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/drawable/item_circular_thin_color_accent_border.xml" value="0.1388888888888889" />
@@ -15,6 +16,7 @@
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/layout/activity_bmi.xml" value="0.215625" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/layout/activity_exercise.xml" value="0.215625" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/layout/activity_finish.xml" value="0.215625" />
+        <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/layout/activity_history.xml" value="0.1" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/layout/activity_main.xml" value="0.2015625" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/layout/dialog_custom_back_confirmation.xml" value="0.215625" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/7MinuteWorkout/app/src/main/res/layout/item_exercise_status.xml" value="0.215625" />

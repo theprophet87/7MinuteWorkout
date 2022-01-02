@@ -13,4 +13,41 @@
         android:id="@+id/toolbar_history_activity"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHistory"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_history_activity"
+        android:textSize="18sp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="EXERCISE COMPLETED"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/rvHistory"
+        app:layout_constraintTop_toBottomOf="@id/tvHistory"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNoDataAvailable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_history_activity"
+        android:textSize="18sp"
+        android:textColor="#212121"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="NO DATA AVAILABLE"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

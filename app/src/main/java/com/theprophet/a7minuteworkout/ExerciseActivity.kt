@@ -22,11 +22,12 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     // - Adding a variables for the 10 seconds REST timer
     //START
-    private var restTimer: CountDownTimer? =
-        null // Variable for Rest Timer and later on we will initialize it.
-    private var restProgress =
-        0 // Variable for timer progress. As initial value the rest progress is set to 0. As we are about to start.
+    private var restTimer: CountDownTimer? = null // Variable for Rest Timer and later on we will initialize it.
+    private var restProgress = 0 // Variable for timer progress. As initial value the rest progress is set to 0. As we are about to start.
     //END
+
+    //Variable for rest timer length
+    private var restTimerDuration: Long = 10
 
 
     // Adding a variables for the 30 seconds Exercise timer
@@ -108,7 +109,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
          *   {#onTick(long)} callbacks.
          */
         // Here we have started a timer of 10 seconds so the 10000 is milliseconds is 10 seconds and the countdown interval is 1 second so it 1000.
-        restTimer = object : CountDownTimer(10000, 1000) {
+        restTimer = object : CountDownTimer(restTimerDuration * 1000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 restProgress++ // It is increased by 1
                 binding?.progressBar?.progress = 10 - restProgress // Indicates progress bar progress
@@ -192,9 +193,10 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                     exerciseAdapter?.notifyDataSetChanged()
                     setupRestView()
                 } else {
-                    finish()
+
                     val intent = Intent(this@ExerciseActivity,FinishActivity::class.java)
                     startActivity(intent)
+                    finish()
                 }
                 // END
             }
